@@ -1,0 +1,24 @@
+{
+  "name": "notification-engine",
+  "version": "1.0.0",
+  "description": "Production-grade async email notification engine using BullMQ + Redis",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "worker": "node src/workers/notificationWorker.js"
+  },
+  "keywords": ["notifications", "bullmq", "redis", "queue", "email"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@bull-board/api": "^6.4.0",
+    "@bull-board/express": "^6.4.0",
+    "bullmq": "^5.12.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "nodemailer": "^6.9.14",
+    "winston": "^3.13.0"
+  }
+}
